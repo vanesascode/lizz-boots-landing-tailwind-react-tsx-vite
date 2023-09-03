@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    /*left and right margins will be automatically adjusted to center the element horizontally within its parent container*/
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+
+  /* margin big picture hero*/
+  .margin {
+    @apply sm:mx-10 mx-0 sm:my-10 my-0;
+  }
+}
+
+/* SALES COMPONENT*/
+
+/* NAVBAR COMPONENT*/
+
+.logo {
+  transition: transform 0.1s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.bg-navbar {
+  background: linear-gradient(
+    to left,
+    rgba(209, 110, 203, 0.8) 0.89%,
+    rgba(200, 86, 192, 0.8) 10.23%,
+    rgba(197, 95, 190, 0.8) 20.04%,
+    rgba(186, 55, 177, 0.8) 30.12%,
+    rgba(166, 37, 158, 0.8) 60.54%,
+    rgb(139, 29, 132, 0.8) 100%
+  );
+
+  backdrop-filter: blur(10px);
+}
+
+.bg-secondary {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fcfcfc 0.89%,
+    #e1e7e7 17.23%,
+    #d3d3d4 42.04%,
+    #cdcbcb 55.12%,
+    #acaaaa 71.54%,
+    #9b9c9c 100%
+  );
+}
+
+.bg-primary {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    rgba(182, 106, 177) 0.89%,
+    rgba(215, 107, 208) 17.23%,
+    rgba(197, 95, 190) 42.04%,
+    rgba(199, 69, 190) 55.12%,
+    rgba(196, 49, 187) 71.54%,
+    rgb(139, 29, 132) 100%
+  );
+}
+
+.bg-primary:hover {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    rgb(213, 58, 203) 0.89%,
+    rgb(196, 58, 187) 17.23%,
+    rgb(193, 39, 183) 42.04%,
+    rgb(140, 23, 132) 55.12%,
+    rgb(113, 21, 107) 71.54%,
+    rgb(98, 15, 92) 100%
+  );
+}
+
+.bg-primary-center {
+  background: radial-gradient(
+    64.18% 64.18% at center,
+    rgba(182, 106, 177) 0.89%,
+    rgba(215, 107, 208) 17.23%,
+    rgba(197, 95, 190) 42.04%,
+    rgba(199, 69, 190) 55.12%,
+    rgba(196, 49, 187) 71.54%,
+    rgb(139, 29, 132) 100%
+  );
+}
+
+.bg-primary-center:hover {
+  background: radial-gradient(
+    64.18% 64.18% at center,
+    rgb(213, 58, 203) 0.89%,
+    rgb(196, 58, 187) 17.23%,
+    rgb(193, 39, 183) 42.04%,
+    rgb(140, 23, 132) 55.12%,
+    rgb(113, 21, 107) 71.54%,
+    rgb(98, 15, 92) 100%
+  );
+}
+
+.text-primary {
+  background: radial-gradient(
+    64.18% 64.18% at center,
+    rgb(213, 92, 205) 0.89%,
+    rgba(215, 107, 208) 17.23%,
+    rgb(157, 52, 150) 42.04%,
+    rgb(167, 54, 159) 55.12%,
+    rgb(153, 27, 145) 71.54%,
+    rgb(139, 29, 132) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navbar when small screen*/
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.sdfsdf {
+  color: rgb(29, 1, 28);
+}
