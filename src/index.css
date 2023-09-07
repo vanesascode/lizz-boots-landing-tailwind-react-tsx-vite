@@ -27,6 +27,15 @@
 }
 
 @layer utilities {
+  .info-text {
+    @apply font-montserrat text-dark text-lg leading-7;
+  }
+
+  /* margin big picture hero*/
+  .margin {
+    @apply sm:mx-10 mx-0 sm:my-10 my-0;
+  }
+
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
@@ -54,42 +63,9 @@
   .padding-b {
     @apply sm:pb-24 pb-12;
   }
-
-  .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
-
-  /* margin big picture hero*/
-  .margin {
-    @apply sm:mx-10 mx-0 sm:my-10 my-0;
-  }
 }
 
-/* SALES COMPONENT*/
-
-/* NAVBAR COMPONENT*/
-
-.logo {
-  transition: transform 0.1s ease-in-out;
-}
-
-.logo:hover {
-  transform: scale(1.2);
-}
-
-.bg-navbar {
-  background: linear-gradient(
-    to left,
-    rgba(209, 110, 203, 0.8) 0.89%,
-    rgba(200, 86, 192, 0.8) 10.23%,
-    rgba(197, 95, 190, 0.8) 20.04%,
-    rgba(186, 55, 177, 0.8) 30.12%,
-    rgba(166, 37, 158, 0.8) 60.54%,
-    rgb(139, 29, 132, 0.8) 100%
-  );
-
-  backdrop-filter: blur(10px);
-}
+/* COLORS AND BACKGROUNDS */
 
 .bg-secondary {
   background: radial-gradient(
@@ -154,17 +130,43 @@
 .text-primary {
   background: radial-gradient(
     64.18% 64.18% at center,
-    rgb(213, 92, 205) 0.89%,
-    rgba(215, 107, 208) 17.23%,
+    rgb(237, 84, 227) 0.89%,
+    rgb(212, 63, 202) 17.23%,
     rgb(157, 52, 150) 42.04%,
-    rgb(167, 54, 159) 55.12%,
+    rgb(148, 43, 141) 55.12%,
     rgb(153, 27, 145) 71.54%,
-    rgb(139, 29, 132) 100%
+    rgb(140, 37, 133) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+/* NAVBAR COMPONENT*/
+
+.logo,
+.icon {
+  transition: transform 0.1s ease-in-out;
+}
+
+.logo:hover,
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.bg-navbar {
+  background: linear-gradient(
+    to left,
+    rgba(209, 110, 203, 0.8) 0.89%,
+    rgba(200, 86, 192, 0.8) 10.23%,
+    rgba(197, 95, 190, 0.8) 20.04%,
+    rgba(186, 55, 177, 0.8) 30.12%,
+    rgba(166, 37, 158, 0.8) 60.54%,
+    rgb(139, 29, 132, 0.8) 100%
+  );
+
+  backdrop-filter: blur(10px);
 }
 
 /* Navbar when small screen*/
@@ -197,5 +199,5 @@
 }
 
 .sdfsdf {
-  color: rgb(29, 1, 28);
+  color: rgb(253, 211, 0);
 }

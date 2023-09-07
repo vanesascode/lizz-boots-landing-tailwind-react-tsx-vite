@@ -2,6 +2,8 @@
 
 Landing page to promote a `FICTIONAL` boots brand. Pics taken from amazon and modified by vanesascode to fit into the website: However, `I DON'T OWN THE RIGHTS OF THE IMAGES`. The rest is all by vanesascode.
 
+On progress [project](https://lizz-boots-vanesascode.vercel.app)
+
 ## 🌟Configurations and rules for ESLint
 
 See the `.eslintrc.cjs` file to see them. ESLint is a tool used for analyzing and enforcing code quality in JavaScript.
@@ -133,10 +135,149 @@ The empty dependency array [] ensures that the effect is only run once, when the
 
 📋 `% salesPhrases.length`: This part of the expression calculates the remainder after dividing the incremented prevIndex value by the length of the salesPhrases array. 👉This ensures that the index value loops back to 0 when it reaches the end of the array, creating a circular effect.
 
-## Interesting CSS Properties:
+---
 
-Interesting properties in the HERO section:
+## 🌟TAILWIND & CSS:
 
-- min-h-screen (min-height: 100vh): in the section tag.
+### Interesting CSS Properties:
 
-- xl:w-2/5 (width: 40% from 1280px onwards): in the left part of the hero. From 1280px (Tailwind default xl screen size) onwards, the flex is also flex-row. And while it is flex-col, the padding is (max-xl:padding-x)
+- min-h-screen (min-height: 100vh).
+
+- lg:max-w-lg (from 1024px onwards, max width of 32rem/512px)
+
+- xl:w-2/5 (width: 40% from 1280px onwards)
+
+---
+
+### Default & custom breakpoints:
+
+Default screens:
+
+```
+ screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+ }
+
+```
+
+Custom screen:
+
+```
+  screens: {
+       wide: "1440px",
+     },
+```
+
+### General guidelines:
+
+In general, all `sections` and ID and have the class:
+
+```
+ .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }`
+```
+
+Then, we have the following class for the `paragraphs`:
+
+```
+.info-text {
+    @apply font-montserrat text-dark text-lg leading-7;
+  }
+```
+
+---
+
+`Titles` have font-palanquin, while rest has font-montserrat
+
+The word `Lizz` has font-viga.
+
+---
+
+## 🌟[REACT-SLICK](https://react-slick.neostack.com/)
+
+Install the required packages:
+
+- [x] `npm install react-slick slick-carousel`
+
+"slick-carousel" is for the CSS
+
+You will have to then import this:
+
+```
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+```
+
+If you are using Typescript, install the TypeScript declaration file for react-slick:
+
+- [x] `npm install --save-dev @types/react-slick`
+
+### How it works:
+
+Inside your component you have to add the `settings`:
+
+```
+const settings: SliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+```
+
+And then wrap the elements into the component `Slider`:
+
+```
+<Slider {...settings}>
+
+//your code
+
+</Slider>
+
+```
+
+---

@@ -25,6 +25,7 @@ export default {
       },
       colors: {
         dark: "rgb(29, 1, 28)",
+        grey: "rgb(67, 68, 69)",
         primary1: "rgb(238, 54, 226)",
         primary2: "rgb(179, 37, 170)",
         primary3: "rgb(139, 29, 132)",

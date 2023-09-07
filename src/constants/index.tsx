@@ -1,9 +1,19 @@
 // import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { boot1, boot2, boot3 } from "../assets/images";
+import { shield, support, truck } from "../assets/icons";
+
+import {
+  boot1,
+  boot2,
+  boot3,
+  boot4,
+  boot5,
+  boot6,
+  boot7,
+} from "../assets/images";
 
 // import { customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
-export const navLinks = [
+export const navLinks: { href: string; label: string }[] = [
   { href: "#home", label: "Home" },
   { href: "#about-us", label: "About Us" },
   { href: "#products", label: "Products" },
@@ -28,8 +38,8 @@ export const salesPhrases: { title: string; subtitle: string }[] = [
 
 export const shoes = [
   {
-    thumbnail: boot1,
-    bigShoe: boot1,
+    thumbnail: boot4,
+    bigShoe: boot4,
   },
   {
     thumbnail: boot2,
@@ -47,47 +57,100 @@ export const statistics: { value: string; label: string }[] = [
   { value: "250k+", label: "Customers" },
 ];
 
-// export const products = [
-//   {
-//     imgURL: shoe4,
-//     name: "Nike Air Jordan-01",
-//     price: "$200.20",
-//   },
-//   {
-//     imgURL: shoe5,
-//     name: "Nike Air Jordan-10",
-//     price: "$210.20",
-//   },
-//   {
-//     imgURL: shoe6,
-//     name: "Nike Air Jordan-100",
-//     price: "$220.20",
-//   },
-//   {
-//     imgURL: shoe7,
-//     name: "Nike Air Jordan-001",
-//     price: "$230.20",
-//   },
-// ];
+export const carrouselCards = [
+  {
+    id: 1,
+    url: boot1,
+    alt: "boot1",
+    name: "Lizz Chic Fit",
+    price: "$199.30",
+  },
+  {
+    id: 2,
+    url: boot2,
+    alt: "boot2",
+    name: "Lizz Wide Fit",
+    price: "$205.20",
+  },
+  {
+    id: 3,
 
-// export const services = [
-//   {
-//     imgURL: truckFast,
-//     label: "Free shipping",
-//     subtext: "Enjoy seamless shopping with our complimentary shipping service.",
-//   },
-//   {
-//     imgURL: shieldTick,
-//     label: "Secure Payment",
-//     subtext:
-//       "Experience worry-free transactions with our secure payment options.",
-//   },
-//   {
-//     imgURL: support,
-//     label: "Love to help you",
-//     subtext: "Our dedicated team is here to assist you every step of the way.",
-//   },
-// ];
+    url: boot3,
+    alt: "boot3",
+    name: "Lizz Wide Push",
+    price: "$200.20",
+  },
+  {
+    id: 4,
+    url: boot4,
+    alt: "boot4",
+    name: "Lizz Leather-01",
+    price: "$219.40",
+  },
+  {
+    id: 5,
+    url: boot5,
+    alt: "boot5",
+    name: "Lizz Leather-02",
+    price: "$239.40",
+  },
+  {
+    id: 6,
+    url: boot6,
+    alt: "boot6",
+    name: "Lizz Leather-03",
+    price: "$259.40",
+  },
+  {
+    id: 7,
+    url: boot7,
+    alt: "boot7",
+    name: "Lizz Fluff Fit",
+    price: "$227.20",
+  },
+];
+
+export const products: { imgURL: string; name: string; price: string }[] = [
+  {
+    imgURL: boot1,
+    name: "Nike Air Jordan-01",
+    price: "$200.20",
+  },
+  {
+    imgURL: boot2,
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+  },
+  {
+    imgURL: boot3,
+    name: "Nike Air Jordan-100",
+    price: "$220.20",
+  },
+  {
+    imgURL: boot4,
+    name: "Nike Air Jordan-001",
+    price: "$230.20",
+  },
+];
+
+export const services = [
+  {
+    imgURL: truck,
+    label: "Free shipping",
+    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+  },
+  {
+    imgURL: shield,
+    label: "Secure Payment",
+    subtext:
+      "Experience worry-free transactions with our secure payment options.",
+  },
+  {
+    imgURL: support,
+    label: "Love to help you",
+    subtext: "Our dedicated team is here to assist you every step of the way.",
+  },
+];
 
 // export const reviews = [
 //   {
