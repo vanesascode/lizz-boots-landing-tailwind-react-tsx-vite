@@ -6,5 +6,22 @@ import boot5 from "./boot5.png";
 import boot6 from "./boot6.png";
 import boot7 from "./boot7.png";
 import boot8 from "./boot8.png";
+import collage1 from "./collage1.png";
+import collage2 from "./collage2.png";
+import collage6 from "./collage6.png";
+import transparentBackground from "./transparent-background.png";
 
-export { boot1, boot2, boot3, boot4, boot5, boot6, boot7, boot8 };
+export {
+  boot1,
+  boot2,
+  boot3,
+  boot4,
+  boot5,
+  boot6,
+  boot7,
+  boot8,
+  collage1,
+  collage2,
+  collage6,
+  transparentBackground,
+};

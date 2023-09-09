@@ -79,6 +79,19 @@
   );
 }
 
+.hover-bg-secondary:hover {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fcfcfc 0.89%,
+    #e1e7e7 17.23%,
+    #d3d3d4 42.04%,
+    #cdcbcb 55.12%,
+    #acaaaa 71.54%,
+    #9b9c9c 100%
+  );
+  border: none;
+}
+
 .bg-primary {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
