@@ -281,3 +281,13 @@ And then wrap the elements into the component `Slider`:
 ```
 
 ---
+
+## 🌟Offer section
+
+### Collage
+
+So, on the left of the #offer section, you can see a collage of elements that are placed on top of a transparent canvas that serves as a static background. Then, I use `relative-absolute positions`, and `percentages` instead of fixed measurements to place the gray backgrounds and the pictures, as I like best. This allows for a creative responsive design that adapts to different screen sizes and resolutions.
+
+### Button component
+
+On the right, there is a button component rendered twice, but with different `props`. They are props that I can use if I like, or not use and then receive the default styles instead. I think it’s really handy and gives a lot of flexibility to React components.

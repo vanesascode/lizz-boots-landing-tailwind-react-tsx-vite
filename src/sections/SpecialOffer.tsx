@@ -82,7 +82,7 @@ const SpecialOffer = () => {
           nothing short of exceptional.
         </p>
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" />
+          <Button label="&nbsp;&nbsp;Shop now&nbsp;" />
           <Button
             label="Learn more"
             backgroundColor="bg-white hover-bg-secondary border-2"
