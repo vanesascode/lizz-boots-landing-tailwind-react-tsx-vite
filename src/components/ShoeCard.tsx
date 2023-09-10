@@ -19,13 +19,13 @@ const ShoeCard = ({ shoes, changeBigShoeImage, bigShoeImg }: ShoeCardProps) => {
     <>
       {/* Ternary to change the border color of the shoe card (when selected as big shoe image) */}
       <div
-        className={`border-4 rounded-xl ${
-          bigShoeImg === shoes.bigShoe ? " border-dark" : " border-transparent"
+        className={` rounded-xl ${
+          bigShoeImg === shoes.bigShoe ? "bg-primary-dark" : "b-primary-center"
         } cursor-pointer max-sm:flex-1`}
         onClick={handleClick}
       >
         {/* The card as it is */}
-        <div className="flex justify-center items-center bg-primary bg-center bg-cover sm:w-40 sm:h-40 rounded-lg max-sm:p-4 ">
+        <div className="flex justify-center items-center bg-primary bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 ">
           <img
             src={shoes.thumbnail}
             alt="shoe colletion"

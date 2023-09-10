@@ -4,13 +4,13 @@ import { Button } from "../components";
 const SuperQuality = () => {
   return (
     <section
-      id="about-us"
       className="flex justify-between items-center max-lg:flex-col max-lg:gap-[100px] gap-10 w-full max-container"
+      id="about-us"
     >
       {/*LEFT SIDE */}
 
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin capitalize text-4xl lg:max-w-lg font-bold">
+        <h2 className="font-palanquin capitalize text-4xl lg:max-w-lg font-bold text-dark">
           We Provide You
           <span className="text-primary"> Super </span>
           <span className="text-primary">Quality </span> Shoes

@@ -139,13 +139,15 @@ The empty dependency array [] ensures that the effect is only run once, when the
 
 ## 🌟TAILWIND & CSS:
 
-### Interesting CSS Properties:
+### Interesting Tailwind properties and their CSS meaning:
 
-- min-h-screen (min-height: 100vh).
+- `min-h-screen` (min-height: 100vh).
 
-- lg:max-w-lg (from 1024px onwards, max width of 32rem/512px)
+- `lg:max-w-lg` (from 1024px onwards, max width of 32rem/512px)
 
-- xl:w-2/5 (width: 40% from 1280px onwards)
+- `xl:w-2/5` (width: 40% from 1280px onwards)
+
+- `break-words` (overflow-wrap: break-word)
 
 ---
 

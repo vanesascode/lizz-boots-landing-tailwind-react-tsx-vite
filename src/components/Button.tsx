@@ -3,6 +3,7 @@ interface ButtonProps {
   backgroundColor?: string;
   textColor?: string;
   borderColor?: string;
+  textSize?: string;
 }
 
 const Button = ({
@@ -10,13 +11,14 @@ const Button = ({
   backgroundColor,
   textColor,
   borderColor,
+  textSize,
 }: ButtonProps) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-8 py-5 border font-montserrat text-xl leading-none font-semibold   hover:font-extrabold rounded-xl ${
+      className={`flex justify-center items-center gap-2 px-8 py-5  font-montserrat  leading-none font-semibold   hover:font-extrabold rounded-xl outline-none ${
         backgroundColor
-          ? `${backgroundColor} ${textColor} ${borderColor}`
-          : "bg-primary-center text-black "
+          ? `${backgroundColor} ${textColor} ${borderColor} ${textSize}`
+          : "bg-primary-center text-black text-xl"
       }`}
     >
       {label}

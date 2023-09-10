@@ -30,6 +30,7 @@ export default {
         primary2: "rgb(179, 37, 170)",
         primary3: "rgb(139, 29, 132)",
         secondary1: "#9b9c9c",
+        logo: "rgb(69, 3, 67)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",

@@ -67,7 +67,7 @@ const SpecialOffer = () => {
       {/* RIGHT SIDE */}
 
       <div className="flex flex-1 flex-col">
-        <h2 className="text-4xl font-palanquin font-bold">
+        <h2 className="text-4xl font-palanquin font-bold text-dark">
           <span className="text-primary">Special </span>
           Offer
         </h2>
@@ -88,6 +88,7 @@ const SpecialOffer = () => {
             backgroundColor="bg-white hover-bg-secondary border-2"
             textColor="text-dark"
             borderColor="border-2 border-secondary"
+            textSize="text-xl"
           />
         </div>
       </div>

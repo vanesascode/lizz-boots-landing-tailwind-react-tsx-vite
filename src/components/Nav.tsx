@@ -12,16 +12,16 @@ const Nav = () => {
         <nav className="flex justify-between items-center max-containter max-container">
           {/* LOGO */}
 
-          <a href="/">
+          <a href="#home">
             <div className="flex items-start logo brightness-200">
               <img
                 src={logo}
                 alt="logo"
                 width={40}
                 height={10}
-                className="mt-1 "
+                className="mt-1"
               />
-              <h1 className="ml-2 font-bold text-[40px] leading-none font-viga">
+              <h1 className="ml-2 font-bold text-[40px] leading-none font-viga ">
                 Lizz
               </h1>
             </div>

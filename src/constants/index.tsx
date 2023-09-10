@@ -1,5 +1,11 @@
-// import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { shield, support, truck } from "../assets/icons";
+import {
+  shield,
+  support,
+  truck,
+  twitter,
+  facebook,
+  instagram,
+} from "../assets/icons";
 
 import {
   boot1,
@@ -9,9 +15,10 @@ import {
   boot5,
   boot6,
   boot7,
+  customer1,
+  customer2,
+  customer3,
 } from "../assets/images";
-
-// import { customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks: { href: string; label: string }[] = [
   { href: "#home", label: "Home" },
@@ -152,33 +159,39 @@ export const services = [
   },
 ];
 
-// export const reviews = [
-//   {
-//     imgURL: customer1,
-//     customerName: "Morich Brown",
-//     rating: 4.5,
-//     feedback:
-//       "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
-//   },
-//   {
-//     imgURL: customer2,
-//     customerName: "Lota Mongeskar",
-//     rating: 4.5,
-//     feedback:
-//       "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
-//   },
-// ];
+export const reviews = [
+  {
+    imgURL: customer1,
+    customerName: "Flavia Orlando",
+    rating: 4.7,
+    feedback:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+  },
+  {
+    imgURL: customer2,
+    customerName: "Patricia Concepcion",
+    rating: 4.8,
+    feedback:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
+  {
+    imgURL: customer3,
+    customerName: "Lauren Cruz",
+    rating: 4.5,
+    feedback:
+      "They are definitely a very careful and professional team. I really like the design of the product.",
+  },
+];
 
 export const footerLinks = [
   {
     title: "Products",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
+      { name: "Lizz Chic Fit", link: "/" },
+      { name: "Lizz Fluff Fit", link: "/" },
+      { name: "Lizz Wide Fit", link: "/" },
+      { name: "Lizz Wide Push", link: "/" },
+      { name: "Lizz Leather Collection", link: "/" },
     ],
   },
   {
@@ -194,14 +207,14 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
+      { name: "customer@lizz.com", link: "mailto:customer@lizz.com" },
+      { name: "+93554562554", link: "tel:+93554562554" },
     ],
   },
 ];
 
-// export const socialMedia = [
-//   { src: facebook, alt: "facebook logo" },
-//   { src: twitter, alt: "twitter logo" },
-//   { src: instagram, alt: "instagram logo" },
-// ];
+export const socialMedia = [
+  { src: facebook, alt: "facebook logo" },
+  { src: twitter, alt: "twitter logo" },
+  { src: instagram, alt: "instagram logo" },
+];

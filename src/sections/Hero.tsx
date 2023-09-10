@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* Subtitle */}
 
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm text-grey">
+        <p className="info-text mt-6 mb-14 sm:max-w-sm text-grey">
           Elevate your look with our latest arrivals and add a touch of style to
           any outfit.
         </p>
@@ -41,8 +41,10 @@ const Hero = () => {
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16 text-dark">
           {statistics.map((stat, index) => (
             <div key={index}>
-              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
-              <p className="leading-7 font-montserrat text-slate-gray">
+              <p className="text-4xl font-palanquin font-bold  text-dark">
+                {stat.value}
+              </p>
+              <p className="leading-7 font-montserrat text-dark">
                 {stat.label}
               </p>
             </div>
