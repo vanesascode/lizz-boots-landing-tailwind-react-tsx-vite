@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Button, Nav, Sales } from "./components";
-import { logo } from "./assets/icons";
+// import { useState, useEffect } from "react";
+import { Nav, Sales } from "./components"; //Button
+// import { logo } from "./assets/icons";
 
 import {
   CustomerReviews,
@@ -14,7 +14,7 @@ import {
 } from "./sections";
 
 const App = () => {
-  const [showModal, setShowModal] = useState<boolean>(false);
+  // const [showModal, setShowModal] = useState<boolean>(false);
 
   //To be opened every time the page is loaded:
 
