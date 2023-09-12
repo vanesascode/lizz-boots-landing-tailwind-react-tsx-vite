@@ -7,17 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
 @layer components {
   .max-container {
     max-width: 1440px;
-    /*left and right margins will be automatically adjusted to center the element horizontally within its parent container*/
+
     margin: 0 auto;
   }
 
@@ -172,11 +165,9 @@
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   /*to center it in the screen and stay on top of the rest*/
   display: flex;
   justify-content: center;
@@ -188,6 +179,19 @@
   background-image: url("./assets/images/modal.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/*COOKIES*/
+
+.cookies-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*to center it in the screen and stay on top of the rest*/
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 8888;
 }
 
 /* NAVBAR COMPONENT*/
@@ -278,11 +282,6 @@
 
 .card:hover::before {
   height: 100%;
-}
-
-.card:hover .btn {
-  color: #212121;
-  background: #e8e8e8;
 }
 
 /* FOOTER */

@@ -2,7 +2,7 @@
 
 Landing page to promote a `FICTIONAL` boots brand. Pics taken from amazon and modified by vanesascode to fit into the website: However, `I DON'T OWN THE RIGHTS OF THE IMAGES`. The rest is all by vanesascode.
 
-On progress [project](https://lizz-boots-vanesascode.vercel.app)
+### Visit the [website](https://lizz-boots-vanesascode.vercel.app)
 
 ## 🌟Configurations and rules for ESLint
 
@@ -293,3 +293,70 @@ So, on the left of the #offer section, you can see a collage of elements that ar
 ### Button component
 
 On the right, there is a button component rendered twice, but with different `props`. They are props that I can use if I like, or not use and then receive the default styles instead. I think it’s really handy and gives a lot of flexibility to React components.
+
+---
+
+## 🌟Modals
+
+These Modals only appear once. Then the local storage should be cleaned in the browser so they would appear again.
+
+- There is a modal for the cookies:
+
+```
+const [showCookies, setShowCookies] = useState<boolean>(false);
+
+  useEffect(() => {
+    const hasCookiesShown = localStorage.getItem("hasCookiesShown");
+
+    if (!hasCookiesShown) {
+      setShowCookies(true);
+      localStorage.setItem("hasCookiesShown", "true");
+    }
+  }, []);
+
+```
+
+- And another one for the sign in request, which lasts some seconds to appear:
+
+```
+const [showModal, setShowModal] = useState<boolean>(false);
+
+ useEffect(() => {
+    const timer = setTimeout(() => {
+      const hasModalShown = localStorage.getItem("hasModalShown");
+
+      if (!hasModalShown) {
+        setShowModal(true);
+        localStorage.setItem("hasModalShown", "true");
+      }
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+```
+
+---
+
+## 🌟CSS `Touch-action` properties
+
+The touch-action CSS property has options that you can use to control how `touch gestures are handled on an element`. Here are some commonly used values:
+
+`auto`: This is the default value and allows the browser to handle touch gestures normally. It allows zooming and panning actions.
+
+`none`: This value disables all touch gestures on the element. It prevents zooming, panning, and scrolling actions.
+
+`pan-x`: This value allows horizontal panning (scrolling) gestures on the element but disables vertical panning and zooming gestures.
+
+`pan-y`: This value allows vertical panning (scrolling) gestures on the element but disables horizontal panning and zooming gestures.
+
+`manipulation`: This value is similar to auto, but it hints to the browser that the touch gestures should not trigger any default behavior, such as zooming or panning. It allows the browser to optimize rendering performance for the element.
+
+`pinch-zoom`: This value allows pinch-to-zoom gestures on the element but disables other touch gestures like panning or scrolling.
+
+You can specify multiple values for the touch-action property using a space-separated list. For example, touch-action: pan-x pan-y allows both horizontal and vertical panning gestures but disables zooming:
+
+```
+.element {
+  touch-action: pan-x pan-y;
+}
+```

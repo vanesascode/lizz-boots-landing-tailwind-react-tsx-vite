@@ -4,6 +4,7 @@ interface ButtonProps {
   textColor?: string;
   borderColor?: string;
   textSize?: string;
+  onClick?: () => void;
 }
 
 const Button = ({
@@ -12,6 +13,7 @@ const Button = ({
   textColor,
   borderColor,
   textSize,
+  onClick,
 }: ButtonProps) => {
   return (
     <button
@@ -20,6 +22,7 @@ const Button = ({
           ? `${backgroundColor} ${textColor} ${borderColor} ${textSize}`
           : "bg-primary-center text-black text-xl"
       }`}
+      onClick={onClick}
     >
       {label}
     </button>

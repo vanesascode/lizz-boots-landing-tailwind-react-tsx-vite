@@ -8,8 +8,8 @@ const Nav = () => {
   return (
     <>
       {/*this is going to make it appear on the top of the other content  */}
-      <header className="padding-x py-3 z-20 w-full sticky top-0 bg-navbar ">
-        <nav className="flex justify-between items-center max-containter max-container">
+      <header className="padding-x py-3 z-20 sticky top-0 bg-navbar ">
+        <nav className="flex justify-between items-center max-containter ">
           {/* LOGO */}
 
           <a href="#home">

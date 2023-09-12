@@ -17,7 +17,7 @@ const Sales = () => {
 
   return (
     <div
-      className="padding-x flex justify-center flex-col items-center text-center  flex-wrap font-montserrat  py-3 w-full text-dark"
+      className="padding-x flex justify-center flex-col items-center text-center  flex-wrap font-montserrat  py-3  text-dark"
       id="home"
     >
       <p className=" font-semibold text-lg">{currentPhrase.title}</p>

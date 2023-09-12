@@ -30,13 +30,15 @@ const SuperQuality = () => {
 
       {/*RIGHT SIDE */}
 
-      <div className="flex-1 flex justify-center items-center relative">
-        <div className="bg-secondary sm:rounded-[20px] xl:h-[375px] xl:w-[675px] h-[300px] w-[500px]"></div>
+      <div className="flex-1 flex justify-center items-center  ">
+        <div className="  xl:h-[375px] xl:w-[675px] h-[500px] w-[300px] relative rounded-[20px] bg-secondary"></div>
+        {/*w-[500px] */}
         <img
           src={boot8}
           alt="product detail"
-          className="absolute z-10 xl:h-[600px] xl:w-[600px] h-[425px] w-[475px] object-contain"
+          className="absolute z-10 xl:h-[600px] xl:w-[600px] h-[475px] w-[350px] object-contain"
         />
+        {/**w-[475px] */}
       </div>
     </section>
   );
